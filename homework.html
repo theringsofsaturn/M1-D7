@@ -17,9 +17,10 @@
       */
 
       const addClassToTitle = function () {
-        let tittleClass = document.getElementsByTagName("h1")
-        h1Class.classList.add("myHeading")
+        const title = document.querySelector("h1");
+        title.classList.add("myHeading");
       };
+      addClassToTitle();
 
       /* EXERCISE 3
       Write a function for changing the text of only the p which are children of a div.
