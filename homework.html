@@ -73,8 +73,8 @@ const changeUrls = function () {
       */
 
       const firstUlDisappear = function () {
-        let firstUl = document.querySelector("#firstList")
-        firstUl.style.display = "none"
+        const ul = document.querySelectorAll("ul")[0];
+        ul.remove();
       };
 
       /* EXERCISE 8
