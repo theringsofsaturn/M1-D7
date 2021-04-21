@@ -33,17 +33,17 @@
         });
       };
       changePcontent();
-      
+
       /* EXERCISE 4
       Write a function for changing the destination of every link to https://www.google.com
       */
-
-      const changeUrls = function () {
-        let GoogleLink = document.querySelectorAll("a")
-        for (let i = 0; i < GoogleLink.length; i++){
-          GoogleLink[i].href="https://www.google.com"
-        }
+const changeUrls = function () {
+        const links = document.querySelectorAll("a");
+        links.forEach((link) => {
+          link.href = "https://www.google.com";
+        });
       };
+      changeUrls();
 
       /* EXERCISE 5
        Write a function for adding a new item in the second list.
