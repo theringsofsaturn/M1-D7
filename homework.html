@@ -27,12 +27,13 @@
       */
 
       const changePcontent = function () {
-        let pText = document.querySelectorAll("div p")
-        for(let i = 0; i <pText.length; i++){
-          pText[i].innerText="New Text"
-        }
+        const paragraphs = document.querySelectorAll("div p");
+        paragraphs.forEach((p) => {
+          p.innerText = "new text";
+        });
       };
-
+      changePcontent();
+      
       /* EXERCISE 4
       Write a function for changing the destination of every link to https://www.google.com
       */
