@@ -99,14 +99,6 @@ const changeUrls = function () {
           e.target.classList.toggle("myHeading");
         });
       };
-      makeItClickable();
-
-    // random colors - taken from here:
-    // http://www.paulirish.com/2009/random-hex-color-code-snippets/
-
-    function randomColors() {
-        return '#' + Math.floor(Math.random() * 16777215).toString(16);
-    }
 
     // added a button to click below the heading! check and click
 
@@ -115,11 +107,13 @@ const changeUrls = function () {
       */
 
       const changeFooterText = function () {
-        
-        document.getElementsByTagName("footer")[0].getElementsByTagName("div")[0].innerHTML = "Hello World";
-
-
+        const footer = document.querySelector("footer");
+        footer.addEventListener("click", function (e) {
+          e.target.innerText = "text changed";
+        });
       };
+      changeFooterText();
+
 
       /* EXERCISE 11
       Attach an event listener to the input field in the page for console logging its value just after any keystroke.
