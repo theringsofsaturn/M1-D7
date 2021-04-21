@@ -82,11 +82,12 @@ const changeUrls = function () {
       */
 
       const paintItGreen = function () {
-        let paintUl = document.querySelectorAll("ul")
-        for(let i = 0; i < paintUl.length; i++){
-          paintUl[i].style.backgroundColor = "green"
-        }
+        const uls = document.querySelectorAll("ul");
+        uls.forEach((ul) => {
+          ul.classList.add("b-green");
+        });
       };
+      paintItGreen();
 
       /* EXERCISE 9
       Make the heading of the page change color every time the user clicks on it.
