@@ -93,10 +93,13 @@ const changeUrls = function () {
       Make the heading of the page change color every time the user clicks on it.
       */
 
-      function randomize() {
-    document.getElementById('h1').style.color = randomColors();
-    }
-
+      const makeItClickable = function () {
+        const title = document.querySelector("h1");
+        title.addEventListener("click", function (e) {
+          e.target.classList.toggle("myHeading");
+        });
+      };
+      makeItClickable();
 
     // random colors - taken from here:
     // http://www.paulirish.com/2009/random-hex-color-code-snippets/
