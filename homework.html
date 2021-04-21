@@ -63,14 +63,10 @@ const changeUrls = function () {
       */
 
       const addParagraph = function (content) {
-        let parentParagraph = document.querySelectorAll("div")
-
-        for (let i = 0; i < parentParagraph.length; i++) {
-          let secondParagraph = document.createElement('p')
-          secondParagraph.innerHTML = "The second paragraph"
-          parentParagraph[i].appendChild(secondParagraph)
-        }
+        const div = document.querySelectorAll("div")[0];
+        div.innerHTML += `<p>${content}</p>`;
       };
+      addParagraph("new paragraph");
 
       /* EXERCISE 7
       Write a function for making the first UL disappear.
