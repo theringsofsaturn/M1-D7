@@ -2,7 +2,7 @@
 # JavaScript Challenge
 
 # Module 1 / Day 7 at Strive School (EPICODE)
-# Answers in the homework.js file
+# Answers in the homework.html file
 
 
 <html>
